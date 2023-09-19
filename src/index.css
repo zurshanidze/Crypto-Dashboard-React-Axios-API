@@ -1,0 +1,239 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width:fit-content;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.news-feed{
+  background-color: rgb(204, 204,231);
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  box-shadow: 0 3px 7px rgb(0 0 0 / 0.2);
+  max-width: 300px;
+}
+
+.app>h1{
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.news-feed div a{
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.link-wrapper p{
+  border-bottom: 5px solid blue;
+  padding-bottom: 5px;
+  padding-top: 16px;
+  margin:0px;
+}
+
+.link-wrapper:hover p{
+  color: rgb(73, 73, 216);
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.currency-converter {
+  background-color: rgb(220, 230, 211);
+  padding: 5px;
+  box-shadow: 0 3px 7px rgb(0 0 0 / 0.2);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.exchange-rate{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(199, 247, 199);
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+}
+
+.exchangeTo-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+}
+
+.exchangeTo-wrapper p{
+  color: rgba(0,0,0,0.8);
+  background-color:rgb(248, 253, 171);
+  font-weight: 700;
+  border: 2px solid rgba(41, 77, 197, 0.3);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.exchangeTo-wrapper :nth-child(1){
+  color: blueviolet;
+  font-weight: 700;
+}
+
+.exchangeTo-wrapper :nth-child(2) {
+  background:none;
+  border: none;
+}
+
+.exchangeTo-wrapper :nth-child(3) {
+  color: rgb(29, 204, 43);
+  font-weight: 700;
+}
+
+.input-box{
+  background-color: rgb(87, 150, 226);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: aliceblue;
+  height: fit-content;
+}
+
+.input-box td{
+  padding: 0 5px;
+}
+
+button{
+  border:none;
+  border-radius: 5px;
+  float: right;
+  margin: 0px auto;
+  margin-top: 10px;
+  padding: 0;
+  height:30px;
+  width:18%;
+  min-width:70px;
+  background-color:aquamarine;
+}
+
+button:hover{
+  background-color: coral;
+}
+
+input, select{
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  height:30px; 
+}
+
+input:focus, select:focus{
+  border: none;
+  outline: 2px groove darkblue;
+}
+
+input{
+  width: 150px;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+input[disabled] {
+  color:rgb(11, 99, 25);
+}
+
+@media(max-width:500px) {
+  .app>h1{
+    text-align: center;
+  }
+  .currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    margin-bottom: 10px;
+  }
+  .input-box {
+    min-width: 180px;
+    padding: 15px;
+  }
+
+  .input-box tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .input-box tr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-box tbody tr input {
+    width:90%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .input-box button {
+    margin: 5px auto;
+  }
+  .exchange-rate{
+    min-width: 20%;
+    padding: 15px;
+    gap:auto;
+  }
+
+  .exchange-rate h1{
+    font-size: 24px;
+  }
+
+  .exchangeTo-wrapper{
+    gap:0px;
+  }
+
+  .news-feed {
+    width: fit-content;
+    max-width:150px;
+    margin:0px;
+    margin-left: 5px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    height: 20px;
+  }
+}
