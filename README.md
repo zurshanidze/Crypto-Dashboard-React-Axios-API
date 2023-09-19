@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+
+# Crypto Dashboard
+
+The 'Crypto Dashboard' is a real-time currency conversion React website that integrates a Crypto API. It allows users to input values for both crypto and real currencies and see the conversions. This project highlights the power of React and APIs to create dynamic and interactive dashboards for currency tracking and monitoring.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
